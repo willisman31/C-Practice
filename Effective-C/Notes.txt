@@ -1,0 +1,24 @@
+# General Notes on C
+
+- every type in C is either
+	- an object type
+	- a function type
+- object = storage where one can represent values
+	- variable = a kind of object; has a declared type
+- function = not an object (shh); has a type
+	- function types are defined by their parameters return type
+- pointer = address where object/function is stored; have a type based on the type they reference
+- pass-by-value (call-by-value) = when an arg is passed to a function, that argument is copied to a separate variable within the scope of the function
+	- natural outcome is that changing the value of a variable within a function will have no effect on the variable that was passed in
+
+## Scope
+
+1. file - object/function is declared outside of a block, it has "file scope"
+2. block - object/function is decalred in a block, it has "block scope"
+3. function prototype - declaration is inside a function's parameters; ends with the declarator
+4. function - area between curly brackets of a function
+
+- scopes may be nested with the most specific scope taking precedence
+	- the larger the scope, the more specific the naming should be so to avoid confusion
+
+
