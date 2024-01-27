@@ -21,4 +21,26 @@
 - scopes may be nested with the most specific scope taking precedence
 	- the larger the scope, the more specific the naming should be so to avoid confusion
 
+## Storage Duration
 
+- scope -> identifiers; lifetime -> objects
+
+- automatic - declaration within block until end of block
+- static - file scope, lifetime is the same as program; may also be declared using *static* keyword
+- thread - used for concurrent programming
+- allocated - for dynamically allocated mem
+
+## Alignment
+
+- sometimes memory must be explicitly realligned due to edge cases with the compiler
+
+## Object Types
+
+- boolean - truth(y) values; _bool or *bool* using stdbool.h
+- character - 3 char types; char is standard
+- numerical types - integer, enum, floating-point
+- void - cannot hold any value;  "void *" means that pointer can reference any object
+
+## Function Types
+
+- 
