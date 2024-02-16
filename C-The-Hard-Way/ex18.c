@@ -53,7 +53,7 @@ int strange_order(int a, int b) {
 }
 
 void test_sorting(int *numbers, int count, compare_cb cmp) {
-	int i =0;
+	int i = 0;
 	int *sorted = bubble_sort(numbers, count, cmp);
 	if (!sorted) die("Failed to sort correctly");
 
@@ -71,7 +71,7 @@ int main(int argc, char *argv[]) {
 	int i = 0;
 	char **inputs = argv + 1;
 
-	int *numbers = malloc(count + sizeof(int));
+	int *numbers = malloc(count * sizeof(int));
 	if (!numbers) die("Memory error in MAIN");
 
 	for (i = 0; i < count; i++) {
