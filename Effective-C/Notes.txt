@@ -27,6 +27,7 @@
 
 - automatic - declaration within block until end of block
 - static - file scope, lifetime is the same as program; may also be declared using *static* keyword
+	- must be initialized w/literal value- cannot be done with a variable
 - thread - used for concurrent programming
 - allocated - for dynamically allocated mem
 
@@ -40,6 +41,11 @@
 - character - 3 char types; char is standard
 - numerical types - integer, enum, floating-point
 - void - cannot hold any value;  "void *" means that pointer can reference any object
+
+## Pointer Notes
+
+- & (ampersand) = unary *address-of* operator
+- * (asterisk) = unary object pointer dereferencer; allows you to manipulate the pointer rather than the object to which it points
 
 ## Function Types
 
